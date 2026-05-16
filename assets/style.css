@@ -1,0 +1,133 @@
+/* Configuraciones de Reseteo y Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Contenedor Principal en Flexbox de Pantalla Completa */
+.workflow-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ================= DISEÑO DEL SIDEBAR ================= */
+.sidebar {
+    width: 320px;
+    min-width: 320px;
+    height: 100%;
+}
+
+.avatar-img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+}
+
+.profile-name {
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+.status-text {
+    font-size: 0.75rem;
+    color: #999999 !important;
+}
+
+/* Botón Morado de la Captura */
+.btn-purple {
+    background-color: #a78bfa; /* Color lila/morado exacto */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-purple:hover {
+    background-color: #8b5cf6;
+    color: #ffffff;
+}
+
+/* Lista de Contactos con Scroll Independiente */
+.contacts-list {
+    background-color: #ffffff;
+}
+
+.contact-item {
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.contact-item:hover {
+    background-color: #f8f9fa;
+}
+
+.contact-img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.contact-item h6 {
+    font-size: 0.95rem;
+    color: #212529;
+}
+
+.contact-item p {
+    font-size: 0.85rem;
+    color: #7c7c7c !important;
+}
+
+/* ================= AREA DE CONTENIDO CENTRAL ================= */
+.main-content {
+    height: 100%;
+}
+
+/* Recuadro del Icono Central */
+.welcome-icon-box {
+    width: 200px;
+    height: 200px;
+    background-color: #b49ffc; /* Tonalidad morada de fondo */
+    border-radius: 28px;
+    color: #ffffff;
+}
+
+.welcome-icon-box i {
+    font-size: 6rem;
+}
+
+/* Ajustes de Tipografía Central */
+.main-title {
+    color: #3f3f46;
+    font-size: 2.75rem;
+    letter-spacing: -0.5px;
+}
+
+.explanation-text {
+    max-width: 600px;
+    font-size: 1.15rem;
+    color: #71717a !important;
+    line-height: 1.5;
+}
+
+/* Ajuste Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80px;
+        min-width: 80px;
+    }
+    .profile-name, .status-text, .header-icons, .btn-purple, .contact-item div {
+        display: none !important;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+}
